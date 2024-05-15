@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             // text ichindagi belgilarni sonini aniqlash
-            
+
             string text = "123ertyuERT4567$%^&*";
             int numbers = 0;
             int lowerLetters = 0;
@@ -14,12 +14,12 @@
 
             for (int i = 0; i < text.Length; i++)
             {
-                if ( text is null)
+                if (text[i] <= '1' && text[i] >= '9')
                 {
-                    
+                    numbers++;
                 }
             }
-            
+            Console.WriteLine(numbers);
         }
     }
 }
