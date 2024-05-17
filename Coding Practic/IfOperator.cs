@@ -2,9 +2,8 @@
 {
     public class IfOperator
     {
-       public void InfoOperator()
-        {
-            string text = "123ertyu23EkRT7+-$%^&*";
+       public void CheckStringChars(string text)
+       {          
             int numbers = 0;
             int lowerLetters = 0;
             int upperLetters = 0;
@@ -15,12 +14,11 @@
                 if (text[i] >= '1' && text[i] <= '9')
                 {
                     numbers++;
-                }
-            
+                }           
                 else if (text[i] >= 'a' && text[i] <= 'z')
-            {
+                {
                     lowerLetters++;
-            }
+                }
                 else if (text[i] >= 'A' && text[i] <= 'Z')
                 {
                     upperLetters++;
