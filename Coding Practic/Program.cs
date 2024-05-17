@@ -9,6 +9,6 @@ namespace Coding_Practic
         {
             IfOperator ifOperator = new IfOperator();
             ifOperator.InfoOperator();
-        }   
-    }
+        }
+    }    
 }
