@@ -1,4 +1,5 @@
-using System.Runtime.CompilerServices;
+
+using Coding_Practic.Solutions;
 
 namespace Coding_Practic
 {
@@ -6,9 +7,8 @@ namespace Coding_Practic
     {
         static void Main(string[] args)
         {
-            IfOperator ifOperator = new IfOperator();
-            ifOperator.CheckStringChars("hjhlkllk122FHJKK*&*(*&^");
-          
+            Solution solution = new Solution();
+            solution.CheckStringChars("hjhlkllk122FHJKK*&*(*&^");
         }
     }    
 }
