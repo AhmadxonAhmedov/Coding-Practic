@@ -1,4 +1,3 @@
-﻿using System.Globalization;
 using System.Runtime.CompilerServices;
 
 namespace Coding_Practic
@@ -30,7 +29,6 @@ namespace Coding_Practic
             }
             Console.WriteLine($"Numeric chars: {numbers}");
             Console.WriteLine($"Lower letters: {lowerLetters}");
->>>>>>> 1092104430406e36bf2b3e0c6b7b2294d678971e
         }
     }    
 }
