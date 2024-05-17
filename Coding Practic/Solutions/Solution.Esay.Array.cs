@@ -4,7 +4,7 @@ public partial class Solution
 {
     public void FindMax(int[] numbers)
     {
-        throw new NotImplementedException();
+        Console.WriteLine("Max numbers");
     }
 
     public void FindMin(int[] numbers)
