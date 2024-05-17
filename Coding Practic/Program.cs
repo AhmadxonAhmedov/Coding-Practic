@@ -1,4 +1,3 @@
-﻿using System.Globalization;
 using System.Runtime.CompilerServices;
 
 namespace Coding_Practic
@@ -9,6 +8,7 @@ namespace Coding_Practic
         {
             IfOperator ifOperator = new IfOperator();
             ifOperator.CheckStringChars("hjhlkllk122FHJKK*&*(*&^");
+          
         }
     }    
 }
