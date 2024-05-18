@@ -9,6 +9,8 @@ namespace Coding_Practic
         {
             Solution solution = new Solution();
             solution.FindMinAndMax();
+            solution.FindMax();
+            solution.FindMin();
         }
     }    
 }
