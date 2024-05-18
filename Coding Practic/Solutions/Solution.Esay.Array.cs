@@ -45,7 +45,6 @@ public partial class Solution
             }
         }
         Console.WriteLine($"Maximum numbers: {max}, Minimum numbers: {min}");
-        //Console.WriteLine($"Minimum numbers: {min}");
     }
 
     public void FindMaxAndMinDiff(int[] numbers)

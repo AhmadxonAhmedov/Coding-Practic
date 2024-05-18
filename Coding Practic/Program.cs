@@ -1,4 +1,3 @@
-
 using Coding_Practic.Solutions;
 
 namespace Coding_Practic

@@ -1,6 +1,3 @@
-
-
-
 namespace Coding_Practic.Solutions;
 
 public partial class Solution : ISolution
@@ -21,5 +18,4 @@ public partial class Solution : ISolution
         int[] maxNumbers = { 10, 20, 30, 410, 120, 65 };
         FindMax(maxNumbers);
     }
-
 }
