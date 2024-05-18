@@ -8,7 +8,7 @@ namespace Coding_Practic
         static void Main(string[] args)
         {
             Solution solution = new Solution();
-            solution.CheckStringChars("hjhlkllk122FHJKK*&*(*&^");
+            solution.FindMinAndMax();
         }
     }    
 }

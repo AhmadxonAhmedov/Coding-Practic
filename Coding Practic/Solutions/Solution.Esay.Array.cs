@@ -4,17 +4,48 @@ public partial class Solution
 {
     public void FindMax(int[] numbers)
     {
-        Console.WriteLine("Max numbers");
+        int max = numbers[0];
+
+        foreach (int num in numbers) 
+        {
+            if (num > max)
+            {
+               max = num;
+            }
+        }
+        Console.WriteLine($"Maximum number: {max}");
     }
 
     public void FindMin(int[] numbers)
     {
-        throw new NotImplementedException();
+      int min = numbers[0];
+        foreach (int num in numbers)
+        {
+            if (num < min) 
+            { 
+                min = num;
+            }
+        }
+        Console.WriteLine($"Minimum number: {min}");
     }
 
     public void FindMinAndMax(int[] numbers)
     {
-        throw new NotImplementedException();
+        int max = numbers[0];
+        int min = numbers[0];
+          foreach (int num in numbers)
+          {
+            if (num > max)
+            {
+                max = num;
+            }
+            if (num < min)
+            {
+                min = num;
+            }
+        }
+        Console.WriteLine($"Maximum numbers: {max}");
+        Console.WriteLine($"Minimum numbers: {min}");
     }
 
     public void FindMaxAndMinDiff(int[] numbers)
