@@ -1,4 +1,3 @@
-
 using Coding_Practic.Solutions;
 
 namespace Coding_Practic
@@ -8,7 +7,11 @@ namespace Coding_Practic
         static void Main(string[] args)
         {
             Solution solution = new Solution();
-            solution.CheckStringChars("hjhlkllk122FHJKK*&*(*&^");
+            solution.FindMax();
+            solution.FindMin();
+            solution.FindMinAndMax();
+            solution.FindMaxAndMinDiff();
+            solution.ReverseArray();
         }
     }    
 }
