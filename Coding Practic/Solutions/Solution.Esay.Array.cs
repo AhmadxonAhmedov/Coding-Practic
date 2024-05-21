@@ -1,3 +1,5 @@
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
 namespace Coding_Practic.Solutions;
 
 public partial class Solution
@@ -6,11 +8,11 @@ public partial class Solution
     {
         int max = numbers[0];
 
-        foreach (int num in numbers) 
+        foreach (int num in numbers)
         {
             if (num > max)
             {
-               max = num;
+                max = num;
             }
         }
         Console.WriteLine($"Maximum number: {max}");
@@ -18,11 +20,11 @@ public partial class Solution
 
     public void FindMin(int[] numbers)
     {
-      int min = numbers[0];
+        int min = numbers[0];
         foreach (int num in numbers)
         {
-            if (num < min) 
-            { 
+            if (num < min)
+            {
                 min = num;
             }
         }
@@ -33,8 +35,8 @@ public partial class Solution
     {
         int max = numbers[0];
         int min = numbers[0];
-          foreach (int num in numbers)
-          {
+        foreach (int num in numbers)
+        {
             if (num > max)
             {
                 max = num;
@@ -44,19 +46,41 @@ public partial class Solution
                 min = num;
             }
         }
-        Console.WriteLine($"Maximum numbers: {max}, Minimum numbers: {min}");
+        Console.WriteLine($"Maximum number: {max}, Minimum number: {min}");
     }
 
-    public void FindMaxAndMinDiff(int[] numbers)
+    public int FindMaxAndMinDiff(int[] numbers)
     {
         // Given an array of integers,
         // return the difference between the
         // largest and smallest integers in the array .
-        throw new NotImplementedException();
+        int max = numbers[0];
+        int min = numbers[0];
+        foreach (int num in numbers)
+        {
+            if (num > max)
+            {
+                max = num;
+            }
+            if (num < min)
+            {
+                min = num;
+            }
+        }
+            return max - min;
     }
-
     public void ReverseArray(int[] numbers)
     {
-        throw new NotImplementedException();
+        int[] num = { 10, 20, 30, 40, 50 };
+        int[] reverseArr = new int[num.Length];
+
+        for (int i = 0; i < num.Length; i++)
+        {
+            reverseArr[i] = num[reverseArr.Length - 1 - i];
+        }
+        foreach (int number in reverseArr)
+        {
+            Console.WriteLine($"Reverse array: {number}");
+        }
     }
 }

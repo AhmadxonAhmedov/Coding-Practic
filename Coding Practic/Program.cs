@@ -7,9 +7,11 @@ namespace Coding_Practic
         static void Main(string[] args)
         {
             Solution solution = new Solution();
-            solution.FindMinAndMax();
             solution.FindMax();
             solution.FindMin();
+            solution.FindMinAndMax();
+            solution.FindMaxAndMinDiff();
+            solution.ReverseArray();
         }
     }    
 }
