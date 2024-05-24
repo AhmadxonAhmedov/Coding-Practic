@@ -1,8 +1,4 @@
 
-
-
-
-
 namespace Coding_Practic.Solutions;
 
 public partial class Solution : ISolution
@@ -35,7 +31,7 @@ public partial class Solution : ISolution
     {
         int[] diffNumber = { 1, 20, 30, 40, 5 };
         int result = FindMaxAndMinDiff(diffNumber);
-        Console.WriteLine($"Differnce between maximal and minimal numbers: {result}");
+        Console.WriteLine($"Difference between maximal and minimal numbers: {result}");
     }
 
     internal void ReverseArray()
