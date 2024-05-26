@@ -12,6 +12,7 @@ namespace Coding_Practic
             solution.FindMinAndMax();
             solution.FindMaxAndMinDiff();
             solution.ReverseArray();
+            //bir narsa
         }
     }    
 }
