@@ -83,4 +83,55 @@ public partial class Solution
             Console.WriteLine($"Reverse array: {number}");
         }
     }
+
+    public int CalculationTotalBalls(int[] arr)
+    {
+        int totalBalls = 0; 
+        foreach (int num in arr)
+        {
+            if (num >= 5)
+            {
+                totalBalls += 3;
+            }
+            else if (num >= 3)
+            {
+                totalBalls += 2;
+            }
+            else if (num < 3)
+            {
+                totalBalls += 1;
+            }
+        }
+        return totalBalls;
+    }
+
+    public void getArrays()
+    {
+        Console.Write("X jamoa gollar sonini kiriting xCountGoals=");
+        int xCountGoals = int.Parse(Console.ReadLine());
+        int[] x = new int[xCountGoals];
+        for (int i = 0; i < xCountGoals; i++)
+        {
+            x[i] = int.Parse(Console.ReadLine());
+        }
+
+        Console.Write("Y jamoa gollar sonini kiriting yCountGoals=");
+        int yCountGoals = int.Parse(Console.ReadLine());
+        int[] y = new int[yCountGoals];
+        for (int i = 0; i < yCountGoals; i++)
+        {
+            y[i] = int.Parse(Console.ReadLine());
+        }
+
+        Solution s = new Solution();
+        s.BasketBall(x, y);
+    }   
+
+    public void getDoubleDonuts()
+    {
+        string[] inputArray = { "1", "2", "0", "00", "4" };
+        string[] outputArray = inputArray.Select(s => s.Replace("0", "00")).ToArray();
+        Console.WriteLine("Input array: [" + string.Join(", ", inputArray) + "]");
+        Console.WriteLine("Output array: [" + string.Join(", ", outputArray) + "]");
+    }
 }

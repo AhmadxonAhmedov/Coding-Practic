@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
 namespace Coding_Practic.Solutions;
 
 public partial class Solution : ISolution
@@ -41,5 +37,10 @@ public partial class Solution : ISolution
     {
         int[] reverseArr = {};
         ReverseArray(reverseArr);
+    }
+
+    public void DoubleDonuts(string[] x)
+    {
+        throw new NotImplementedException();
     }
 }
